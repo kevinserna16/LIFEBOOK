@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulario Registro</title>
+</head>
+<body>
+  <form method="post" action="reg.php">
+    
+  <section class="form-register">
+    <h4>REGISTRO</h4>
+    <input class="controls" type="text" name="documentou" id="documento" placeholder="Ingrese su Documento">
+    <input class="controls" type="text" name="nombreu" id="nombre" placeholder="Ingrese su Nombre Completo">
+    <input class="controls" type="text" name="nicku" id="nick" placeholder="Ingrese su Nick">
+    <input class="controls" type="email" name="correou" id="correo" placeholder="Ingrese su Correo">
+    <input class="controls" type="password" name="passwordu" id="password" placeholder="Ingrese su Contraseña">
+    <input class="controls" type="password" name="rpasswordu" id="rpassword" placeholder="Repita su Contraseña">
+    <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+    <div style="text-align: center;">
+    <input class="botons" type="submit" name="submit" value="Registrar">
+    <input class="boton2" type="reset" name="reset" value="Limpiar" />
+     </div>
+    <p><a href="#">¿Ya tengo Cuenta?</a></p>
+  </section>
+  </form>
+<?php
+			 if(isset($_POST['submit'])){ 
+				require("reg.php");
+
+			 }
+  
+?>
+</body>
+</html>
